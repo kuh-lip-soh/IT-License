@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TP_Guichet_Automatique" version="4">
+  <OBJECT>
+    <ID name="TP_Guichet_Automatique" mc="Standard.Project" uid="8eeeeec3-98b9-400d-af56-0b875f0d0616"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[TP_Guichet_Automatique]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Model">
+        <COMPID name="tp_guichet_automatique" mc="Standard.Package" uid="8ba15939-2180-47fc-88e1-faebc2600ca9"/>
+      </COMP>
+      <COMP relation="DiagramRoot">
+        <COMPID name="TP_Guichet_Automatique" mc="Infrastructure.DiagramSet" uid="d92f5625-2361-4053-a257-70b06518051b"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

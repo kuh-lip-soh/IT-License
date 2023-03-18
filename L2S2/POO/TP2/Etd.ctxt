@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Etd
+comment1.params=nom
+comment1.target=Etd(java.lang.String)
+comment2.params=
+comment2.target=int\ getMat()
+comment3.params=
+comment3.target=void\ setDept()
+comment4.params=
+comment4.target=void\ show()
+numComments=5

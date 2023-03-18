@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Bibliothèque" version="4">
+  <OBJECT>
+    <ID name="Bibliothèque" mc="Standard.Project" uid="6b60b3ad-1117-416a-a011-4ad1775f9c4a"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[Bibliothèque]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Model">
+        <COMPID name="bibliothèque" mc="Standard.Package" uid="d9070dc1-8f2a-4989-9baa-8f495e1beec0"/>
+      </COMP>
+      <COMP relation="DiagramRoot">
+        <COMPID name="Bibliothèque" mc="Infrastructure.DiagramSet" uid="7ae0f4d8-9e70-4f4d-ac85-c7018b3ad5a6"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

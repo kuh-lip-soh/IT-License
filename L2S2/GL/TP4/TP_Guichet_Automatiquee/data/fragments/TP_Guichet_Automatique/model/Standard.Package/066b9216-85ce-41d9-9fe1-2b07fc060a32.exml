@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Package Cas_Utilisation" version="4">
+  <OBJECT>
+    <ID name="Package Cas_Utilisation" mc="Standard.Package" uid="066b9216-85ce-41d9-9fe1-2b07fc060a32"/>
+    <PID name="tp_guichet_automatique" mc="Standard.Package" uid="8ba15939-2180-47fc-88e1-faebc2600ca9"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Package Cas_Utilisation]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Retirer de l'argent" mc="Standard.UseCase" uid="710d0bde-09d4-4e65-97c4-22799710ed6b"/>
+        <COMPID name="Retirer Dinars" mc="Standard.UseCase" uid="6b6f28e5-04e7-43db-9c31-364dc3a99f66"/>
+        <COMPID name="Retirer euros" mc="Standard.UseCase" uid="50e1761b-9e19-4716-893e-5668501625c6"/>
+        <COMPID name="Avoir ticket" mc="Standard.UseCase" uid="8e5daf59-bac3-4be6-8f97-0065a000129e"/>
+        <COMPID name="S'ientifier" mc="Standard.UseCase" uid="f3ce753f-de63-4fa1-a710-e7560f6e09f2"/>
+        <COMPID name="Consulter son compte" mc="Standard.UseCase" uid="1021e59e-6b1c-4f6a-b544-389260793cd1"/>
+        <COMPID name="Retirer les cartes avalées" mc="Standard.UseCase" uid="206e8481-f52b-4c53-851d-f58f1370c59c"/>
+        <COMPID name="Assurer la maintenance" mc="Standard.UseCase" uid="c55ee67c-f30b-437a-8a94-09fe8839d064"/>
+        <COMPID name="Ajouter des billets" mc="Standard.UseCase" uid="af81adfd-3e2b-402e-badb-86ad74d05045"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="tp_guichet_automatique Use Case diagram" mc="Standard.UseCaseDiagram" uid="ddabec08-2922-484d-9392-b35ee96ef1a4"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

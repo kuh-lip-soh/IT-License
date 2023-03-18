@@ -1,0 +1,73 @@
+Sources :
+Wikipédia - Cours SMA du Mastère info Paris XI
+SMA : Approche décisionnelle des systèmes complexes B-ADSc
+Agents et SMA - UPBucarest
+Ainsi que mon humble experience personelle
+
+En fait, c'est quoi ?
+un SMA est un système composé de plusieurs agents comme son nom l'indique, ces agents peuvent etre mecaniques, biologique ou logiciel et
+sont actifs et  dans un certain environement et suivant certaines règles,
+l'agent est donc partiellement autonome il obtient une directive du système et se demène a l'effectuer
+Les SMA font office de bonne base pour modéliser des sociétés humaines ou animales.
+
+Comment opère un agent et s'adapte :
+Un agent agit d'une manière lui permettant d'obtenir le plus de succès
+possible dans la réalisation des tâches qu'on lui a assignées.
+Mais avant ca il doit passer par l'étude de la nature des intéractions qui lui sont permises et de leur résultats vis-a-vis
+du succès final
+Comment peut-on mesurer le succès d'un agent ?
+Tout simplement une mesure de performance, si possible objective, associée à une certaine tâche que l'agent doit exécuter.
+
+Exemple : dans le jeu de course Trackmania, il y a une catégorie appelé TAS (Tool Assisted Speedrun) qui consiste tout simplement
+a faire mieux que les records mondiaux établi par des vrais joueurs a l'aide d'outils et donc d'agents, le succès est simple a evaluer
+il suffit de prendre le chrono a la fin de la course, alors notre agent commence a tester des trajectoires differentes et dans cet exemple il 
+se retrouveras souvent a exploiter des bugs du moteur de collision du jeu de facon assez spéctaculaire et ridiculement efficace et c'est
+autorisé dans la catégorie puisque c'est reproduisible a 100% par ce dernier, un humain par contre serait incapable de le faire
+Je vous laisse une petite vidéo a la fin pour voir la différence
+https://www.youtube.com/watch?v=ndGb7J_Rc3g&t=51s
+
+La partie historique :
+La source d'inspiration pour ce genre de systèmes était la volonté d'etudier les comportements sociaux de certaines familles
+d'insectes, les fourmis en l'occurence elles semblaient obéir a une sorte d'intelligence collective et en a découlé la création des SMA
+ainsi fut la rencontre de divers domaines tel que l'intelligence artificielle pour les aspects décisionels, les systèmes distribué
+pour executer les taches décidés et les interactions, et le genie logiciel pour l'evolutivité vers des composants plus autonomes
+
+De quoi est fait un SMA ?
+Il nous faut un modele cognitif qui permet a nos agents d'etre en relation avec leur environement, cette partie est en quelque sortes
+un "etat mental" qui reflete les perceptions, représentations et certain paramètres "psychiques" de nos agents et de ce qu'ils voudraient
+accomplir dans cet environement.
+Le modèle BDI est mis en oeuvre (Beliefs-Desires-Intents) :
+Les Beliefs/Croyance sont les informations que possède l'agent sur son environement et sur d'autres agents.
+Ses desires sont les etats de son environement ou parfois de lui-même qu'il aimerait voir réalisés.
+Et ses intentions sont les désirs qu'il a décidé d'accomplir ou les actions qu'il a décidé de faire en lesquels decoulent ses résultats escomptés.
+
+On a besoin d'un système decisionnel et de planification pour eviter que nos agents se battent pour la meme ressource qui leur permet d'effectuer 
+leur tache
+Et aussi d'un système de communication pour échanger entre agents differentes informations, les langages utilisés de nos jours sont plus standardisés et
+le dernier en date est le FIPA-ACL, c'est un standard on va dire et son acronyme ACL est pour Agent Communication Language, simple et efficace et 
+FIPA pour sa fondation créatrice mais vous allez oublier ca dans 5 mins
+
+Et donc maintenant prenons une fourmillière, la reine demande a ses 6 fourmis devant elle d'aller chercher de la nourriture et ses dernieres s'éxécutent,
+en sortant de la fourmillière ils croisent 2 fourmis qui leurs donnent des informations sur la position de potentiel nourriture,
+ces dernières doivent décider ensemble qui va d'un coté et qui va de l'autre parce-que comme vous le voyez, il n'y a pas assez de nourriture
+dans l'un des cotés pour nos 6 fourmis, c'est ce comportement de décision de groupe qui est reproduit par un SMA a travers divers domaine de l'IA et 
+qui leur permetera de se décider en groupe de qui va a gauche et qui va a droite
+
+Domaine d'applications ?
+Comme dit au début, l'un des domaines phare des SMA est la simulation de phéniomènes complexes tel que la la sociologie mais aussi la chimie oû des 
+agents formeraient des particules élémentaires et ainsi un certain regroupement formerait une particule composite, un atome, puis une molécule et
+ainsi de suite pour simuler par exemple un système celullaire et nous permetre d'étudier un phénomène particulier en ayant un maximum de données
+sur ce qui se passe
+
+Les SMA peuvent aussi servir dans le divertissement comme le cinéma par exemples ou dans certaines scènes on y voit des énormes foules là oû il
+serait compliqué de ramener un tel nombre de figurants et en meme temps le niveau de détail nécessaire est minime tel qu'on peut les simuler
+avec des SMA sans que ca se remarque et donc on garde une bonne experience pour la personne qui visionne le film/la serie/le clip.
+ici on a le dernier Avengers qui évidement vu le budget énorme a un résultat très propre, et là un clip de PNL oû certaines personnes dans
+la file ont des ombres et des poses quelque peu bizarre mais bon ca dure 5 secondes grand max on va pas chipoter la dessus,dans un visionnage
+normal ca reste extremement peu perceptible ce genre de minuscule détails 
+
+et puis c'est utilisable aussi dans la finance, disons qu'on a un SMA a qui on donne 100 et on lui demande de la fructifier au maximum pendant 1mois
+le SMA va mettre pleins d'agent pour suivre plein d'actions differentes pour qu'ils achetent au moment qu'ils estiment opportun chacun de leur
+cotés et de même pour la revente et ainsi faire une plus-value qui est donc le niveau de succès de nos agents
+
+Pour conclure je trouve que la facon de faire des SMA est et resteras fiable

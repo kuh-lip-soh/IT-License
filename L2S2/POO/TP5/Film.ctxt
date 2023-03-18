@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Film
+comment1.params=t\ d
+comment1.target=Film(java.lang.String,\ double)
+comment2.params=
+comment2.target=double\ getDur\u00E9e()
+comment3.params=d
+comment3.target=void\ setDur\u00E9e(double)
+comment4.params=v
+comment4.target=int\ comparerA(Film)
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6

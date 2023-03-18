@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Moyenne
+comment1.params=sn
+comment1.target=void\ ajouterNote(double)
+comment2.params=note
+comment2.target=double\ calculMoyenne(double)
+numComments=3

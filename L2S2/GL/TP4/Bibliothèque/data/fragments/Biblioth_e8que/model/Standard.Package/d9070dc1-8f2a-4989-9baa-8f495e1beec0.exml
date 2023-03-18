@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="bibliothèque" version="4">
+  <OBJECT>
+    <ID name="bibliothèque" mc="Standard.Package" uid="d9070dc1-8f2a-4989-9baa-8f495e1beec0"/>
+    <PID name="Bibliothèque" mc="Standard.Project" uid="6b60b3ad-1117-416a-a011-4ad1775f9c4a"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[bibliothèque]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Declared">
+        <OBJECT>
+          <ID name="UML 2 : Par la pratique" mc="Standard.Instance" uid="c46a7caa-ab90-43a5-b95c-dc1a9aa2a428"/>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"><![CDATA[2]]></ATT>
+            <ATT name="Name"><![CDATA[UML 2 : Par la pratique]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Base">
+              <ID name="Livre" mc="Standard.Class" uid="db443a12-a532-4956-8b17-19fa601501b2"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Nature" mc="Standard.Instance" uid="807f6928-da32-4735-9696-dcc972e7f3ed"/>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"><![CDATA[1]]></ATT>
+            <ATT name="Name"><![CDATA[Nature]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Base">
+              <ID name="Revue" mc="Standard.Class" uid="88dd4f80-daed-4a85-ba1b-0096d0a6d172"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="Livre" mc="Standard.Class" uid="db443a12-a532-4956-8b17-19fa601501b2"/>
+        <COMPID name="Exemplaire 1" mc="Standard.Class" uid="ebffbcc5-d23c-4b0e-a325-52beec6f03fa"/>
+        <COMPID name="Revue" mc="Standard.Class" uid="88dd4f80-daed-4a85-ba1b-0096d0a6d172"/>
+        <COMPID name="Bibliothèque" mc="Standard.Class" uid="2372ff50-095a-4dd3-9cbf-63f31ab035c7"/>
+        <COMPID name="Emplacement" mc="Standard.Class" uid="4ff6a4ff-6ad7-4147-8416-2f165b15a1ac"/>
+        <COMPID name="Exemplaire 2" mc="Standard.Class" uid="a9c8eb81-cbed-4590-b9dc-a1b5cadb050a"/>
+        <COMPID name="Utilisateur" mc="Standard.Class" uid="c3438ad0-d42b-48d3-85c3-03a1f0a896b0"/>
+        <COMPID name="Exemplaire" mc="Standard.Class" uid="43090a43-c125-464d-90a6-26e5388f52b2"/>
+        <COMPID name="Biblio" mc="Standard.Class" uid="47cf9ed5-254f-49d4-952f-8c7fc21fa430"/>
+        <COMPID name="Date" mc="Standard.Class" uid="9331987a-6a70-4d7b-aade-076cf89168a1"/>
+        <COMPID name="Ouvrage" mc="Standard.Class" uid="a2257b05-0ce1-4d2e-b9cf-456932e1ba04"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagramme de classe bibliothèque" mc="Standard.ClassDiagram" uid="ec3d25dc-d561-4c7c-aa3c-8589818fc05d"/>
+        <COMPID name="Diagramme d'objet bibliothèque" mc="Standard.ObjectDiagram" uid="22a8af2c-4fee-496a-9c55-82d44e999e85"/>
+        <COMPID name="Diagramme de classe za3ma" mc="Standard.ClassDiagram" uid="94ae4fe4-7d7b-42be-81d7-3803e21db842"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

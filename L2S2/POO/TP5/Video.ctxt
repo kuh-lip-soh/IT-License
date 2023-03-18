@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Video
+comment1.params=t
+comment1.target=Video(java.lang.String)
+comment2.params=v
+comment2.target=int\ comparerA(Video)
+comment3.params=
+comment3.target=java.lang.String\ getTitre()
+comment4.params=t
+comment4.target=void\ setTitre(java.lang.String)
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6

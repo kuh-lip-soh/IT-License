@@ -1,0 +1,45 @@
+# depslib dependency file v1.0
+1547163608 source:c:\users\adil\desktop\puissance4\affichage.c
+	<stdio.h>
+	<stdlib.h>
+
+1547161270 source:c:\users\adil\desktop\puissance4\main.c
+	<stdio.h>
+	"affichage.h"
+	"verif_cases+position.h"
+	"victoire.h"
+
+1547154804 c:\users\adil\desktop\puissance4\affichage.h
+
+1547154191 c:\users\adil\desktop\puissance4\verif_cases+position.h
+
+1547154324 c:\users\adil\desktop\puissance4\victoire.h
+
+1547154280 source:c:\users\adil\desktop\puissance4\verif_cases+position.c
+	<stdio.h>
+
+1547165400 source:c:\users\adil\desktop\puissance4\victoire.c
+	<stdio.h>
+
+1547166773 source:c:\users\zakaria\desktop\program\c\power rangers\affichage.c
+	<stdio.h>
+	<stdlib.h>
+
+1547161270 source:c:\users\zakaria\desktop\program\c\power rangers\main.c
+	<stdio.h>
+	"affichage.h"
+	"verif_cases+position.h"
+	"victoire.h"
+
+1547154804 c:\users\zakaria\desktop\program\c\power rangers\affichage.h
+
+1547154191 c:\users\zakaria\desktop\program\c\power rangers\verif_cases+position.h
+
+1547154324 c:\users\zakaria\desktop\program\c\power rangers\victoire.h
+
+1547154280 source:c:\users\zakaria\desktop\program\c\power rangers\verif_cases+position.c
+	<stdio.h>
+
+1547166974 source:c:\users\zakaria\desktop\program\c\power rangers\victoire.c
+	<stdio.h>
+

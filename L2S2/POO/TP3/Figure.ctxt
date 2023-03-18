@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Figure
+comment1.params=
+comment1.target=Figure()
+comment2.params=p
+comment2.target=Figure(Point)
+numComments=3

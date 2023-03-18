@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="Livre.xsl"?>
+<livre titre="Tlivre">
+    <auteurs>
+        <auteur nom='A' prenom='B' />
+        <auteur nom='C' prenom='D' />
+    </auteurs>
+    <sections>
+        <section titre="Sec">
+            <chapitre titre="chap1">
+                <paragraphe>premier paragraphe</paragraphe>
+                <paragraphe>deuxieme paragraphe</paragraphe>
+            </chapitre>
+        </section>
+        <section titre='Sec2'>
+            <chapitre titre="chap2">
+                <paragraphe>un seul paragraphe</paragraphe>
+            </chapitre>
+        </section>
+    </sections>
+</livre>

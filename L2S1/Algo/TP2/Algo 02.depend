@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1610020317 source:c:\users\kalipso\google drive\prog\c\algo tp2\ex01\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

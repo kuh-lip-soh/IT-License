@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">tp04</string>
+    <string name="textView1">multi threading</string>
+    <string name="button1">ok</string>
+    <string name="button2">thread1</string>
+    <string name="button3">thread2</string>
+	<string name="progressBar1"></string>
+	<string name="imageView1"></string>
+</resources>

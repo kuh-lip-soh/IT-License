@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>TP 5 - Premiers pas avec le JavaScript</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="monStyleExterne.CSS">
+	</head>
+	
+	<script>
+		//Variables globales
+		var euro_to_dzd = 160; usd_to_dzd = 132;
+		
+		function tauxConversion(){
+			if(document.getElementsByName("taux")[0].checked){
+				euro_to_dzd = 160; usd_to_dzd = 132;
+			} else {
+				euro_to_dzd = 210; usd_to_dzd = 177;
+			}
+			convertir();
+		}
+		
+		function convertir(){
+			var montant = document.getElementById("montant").value;
+			
+			var depart = document.getElementById("depart");
+			var deviseDepart = depart.options[depart.selectedIndex].text;
+			
+			var arrivee = document.getElementById("arrivee");
+			var deviseArrivee = depart.options[arrivee.selectedIndex].text;
+			
+			if(deviseDepart == deviseArrivee){
+				document.getElementById("resultat").value = montant;
+			} else if(deviseDepart == "DZD" && deviseArrivee == "EURO"){
+				document.getElementById("resultat").value = montant/euro_to_dzd;
+			} else if(deviseDepart == "DZD" && deviseArrivee == "USD"){
+				document.getElementById("resultat").value = montant/usd_to_dzd;
+			} else if(deviseDepart == "EURO" && deviseArrivee == "DZD"){
+				document.getElementById("resultat").value = montant*euro_to_dzd;
+			} else if(deviseDepart == "USD" && deviseArrivee == "DZD"){
+				document.getElementById("resultat").value = montant*usd_to_dzd;
+			} else if(deviseDepart == "EURO" && deviseArrivee == "USD"){
+				document.getElementById("resultat").value = montant* (euro_to_dzd/usd_to_dzd);
+			} else //USD to EURO{
+				document.getElementById("resultat").value = montant* (usd_to_dzd/euro_to_dzd);
+		}
+		
+		function modifierMontant(){
+			var montant = parseInt(document.getElementById("montant").value);
+			if(event.keyCode == 38)
+				document.getElementById("montant").value = montant + 1;
+			else if(event.keyCode == 40 && montant > 0)
+				document.getElementById("montant").value = montant - 1;
+			else if(event.keyCode == 37)
+				document.getElementsByName("taux")[0].checked = true;
+			else if(event.keyCode == 39)
+				document.getElementsByName("taux")[1].checked = true;
+			
+			tauxConversion();
+		}
+	</script>
+	
+	<style>
+		div {
+			border-style : solid;
+			border-color : #B22222;
+			border-radius : 10px;
+		}
+		
+		input, select{
+			height : 20px;
+			width:190px;
+			border-radius : 10px;
+			margin:10px;
+		}
+		select {
+			width:200px;
+			height : 25px;
+		}
+		input[type="radio"], select {
+			cursor : pointer;
+		}
+		td{
+			text-align:center;
+			height:10px;
+		}
+		label {
+			font-weight:bold; text-decoration:underline;
+			font-size:20px;line-height:10px;
+		}
+	</style>
+	<body onkeydown="modifierMontant()">
+		<div>
+			<h2 align="center">Convertisseur de devises</h2>
+			<form id="monFormulaire" style="margin-left:20%">
+				<table width="80%">
+					<tr>
+						<td width="35%">
+							<label>Devise de départ:</label>
+							<br>
+							<select id="depart" onchange="convertir()">
+								<option>DZD</option>
+								<option>EURO</option>
+								<option>USD</option>
+							</select>
+							<br>
+							<input type="text" id="montant" value="10" oninput="convertir()">
+						</td>
+						<td width="10%">
+							<img src="converter.png" width="50px" height="50px">
+						</td>
+						<td width="35%">
+							<label>Devise d'arrivée:</label>
+							<br>
+							<select id="arrivee" onchange="convertir()">
+								<option>DZD</option>
+								<option>EURO</option>
+								<option>USD</option>
+							</select>
+							<br>
+							<input type="text" id="resultat" value="10" disabled>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<hr width="80%">
+							<b>Taux de la Banque</b> <input type="radio" name="taux" checked onchange="tauxConversion()">
+							<b>Taux du Square</b> <input type="radio" name="taux" onchange="tauxConversion()">
+						</td>
+					</tr>
+				</table>
+			</form>
+			<br>
+		</div>
+		<br>
+	</body>
+</html>

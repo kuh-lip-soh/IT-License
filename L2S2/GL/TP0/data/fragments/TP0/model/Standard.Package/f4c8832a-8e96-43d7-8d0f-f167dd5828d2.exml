@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="tp0" version="4">
+  <OBJECT>
+    <ID name="tp0" mc="Standard.Package" uid="f4c8832a-8e96-43d7-8d0f-f167dd5828d2"/>
+    <PID name="TP0" mc="Standard.Project" uid="c799f9a7-087d-4774-9111-33aa97e34550"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[tp0]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Adresse" mc="Standard.Class" uid="e3108e11-3ffe-465d-ab40-dab8b857da7d"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagramme de classe tp0" mc="Standard.ClassDiagram" uid="7d1a1db7-6e2c-4c1c-8b52-f3aedd4ec6f6"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

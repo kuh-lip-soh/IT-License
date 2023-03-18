@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>TP 4 - Premiers pas avec les putains de scripts</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="monStyleExterne.CSS">
+</head>
+
+<script>
+	function verifier_nom_prenom() {
+		var n = document.getElementById("nom").value;
+		var pn = document.getElementById("prenom").value;
+		if (n == "" || pn == "")
+			document.getElementById("erreur_nom_prenom").textContent = "Nom/prenom vide.s";
+		else if (n == pn)
+			document.getElementById("erreur_nom_prenom").textContent = "Nom/prenom identiques";
+		else
+			document.getElementById("erreur_nom_prenom").textContent = "";
+	}
+	function verifier_mot_passe() {
+		var mdp1 = document.getElementById("mdp1").value;
+		var mdp2 = document.getElementById("mdp2").value;
+		if (mdp1 == "" || mdp2 == "") {
+			document.getElementById("erreur_mdps").textContent = "Mot de passe vide";
+			document.getElementById("mdp2").style.color = "red";
+		}
+		else if (mdp1 == mdp2) {
+			document.getElementById("erreur_mdps").textContent = "";
+			document.getElementById("mdp2").style.color = "green";
+		}
+		else {
+			document.getElementById("erreur_mdps").textContent = "Les mot de passes different";
+			document.getElementById("mdp2").style.color = "red";
+		}
+	}
+	function compte_existe(){
+		if(document.getElementsByName("compte")[1].checked == true)
+		{
+			document.getElementById("nom").disabled=true;
+			document.getElementById("prenom").disabled=true;
+			document.getElementById("email").disabled=true;
+		}
+		else
+		{
+			document.getElementById("nom").disabled=false;
+			document.getElementById("prenom").disabled=false;
+			document.getElementById("email").disabled=false;
+		}
+	}
+</script>
+
+<style>
+	/* PARTIE I */
+	header {
+		color: #B22222;
+		border-style: solid;
+		border-color: #B22222;
+		border-radius: 10px;
+		background-image: url('world_map.jpg');
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-size: 50% 70%;
+	}
+
+	nav {
+		background-color: #B22222;
+		text-align: center;
+	}
+
+	div {
+		border-style: solid;
+		border-color: #B22222;
+		border-radius: 10px;
+		height: 450px;
+	}
+
+	fieldset {
+		border-style: dashed;
+		border-color: #B22222;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+
+	legend {
+		color: #B22222;
+		font-size: 20px;
+		font-weight: bold;
+		font-variant: small-caps;
+		text-decoration: underline overline;
+		font-family: "Lucida Calligraphy", "Lucida Handwriting", cursive;
+	}
+
+	a {
+		color: white;
+		font-size: 20px;
+		line-height: 30px;
+		text-decoration: none;
+	}
+
+	input {
+		height: 20px;
+		border-radius: 10px;
+	}
+
+	select {
+		height: 25px;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+	}
+
+	input,
+	select,
+	option,
+	textarea {
+		font-weight: bold;
+	}
+
+	input[type="radio"],
+	input[type="date"],
+	input[type="file"],
+	select {
+		cursor: pointer;
+	}
+
+	input[type="submit"] {
+		width: 50px;
+		height: 50px;
+		border-style: solid;
+		border-color: green;
+		border-radius: 10px;
+		background-image: url('submit.png');
+		background-size: 100% 100%;
+	}
+</style>
+
+<body>
+	<header>
+		<table>
+			<tr>
+				<td width="17%">
+					<img src="air_algérie.JPG" width="300px" height="90px">
+				</td>
+				<td width="83%">
+					<h1 align="right"><i>Always caring for you</i></h1>
+				</td>
+			</tr>
+		</table>
+		<br>
+		<nav>
+			<ul>
+				<li style="display:inline"><a href="accueil.html">Accueil</a>&nbsp;&nbsp;&nbsp;</li>
+				<li style="display:inline"><a href="promotions.html">Offres promotionnelles</a>&nbsp;&nbsp;&nbsp;</li>
+				<li style="display:inline"><a href="vols.html">Programme de vols</a>&nbsp;&nbsp;&nbsp;</li>
+				<li style="display:inline"><a href="compagnie.html">Notre compagnie</a>&nbsp;&nbsp;&nbsp;</li>
+				<li style="display:inline"><a href="contact.html">Contactez-nous</a>&nbsp;&nbsp;&nbsp;</li>
+			</ul>
+		</nav>
+	</header>
+	<br>
+	<div>
+		<h2 align="center">Inscription/Authentication</h2>
+		<form method="POST" action="reception.PHP" id="monFormulaire" style="width:70%; margin-left:30%">
+			<table width="100%">
+				<tr>
+					<td><label><b>Avez-vous un compte ? </b></label></td>
+					<td>
+						<input type="radio" name="compte" onclick="compte_existe()" checked > Non
+						<input type="radio" name="compte" onclick="compte_existe()"> Oui
+					</td>
+				</tr>
+				<tr>
+					<td><label><b>Nom: </b></label></td>
+					<td><input type="text" size="30" id="nom" oninput="verifier_nom_prenom()"></td>
+				</tr>
+				<tr>
+					<td><label><b>Prénom: </b></label></td>
+					<td>
+						<input type="text" size="30" id="prenom" oninput="verifier_nom_prenom()"><br>
+						<label id="erreur_nom_prenom" style="color:red"></label>
+					</td>
+				</tr>
+				<tr>
+					<td><label><b>E-mail:
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+					</td>
+					<td><input type="email" size="30" maxlength="50" id="email"></td>
+				</tr>
+				<tr>
+					<td><label><b>Pseudo:</b></label></td>
+					<td>
+						<input type="text" size="30" id="pseudo">
+					</td>
+				</tr>
+				<tr>
+					<td><b>Mot de passe:</b></td>
+					<td><input type="password" size="30" id="mdp1" oninput="verifier_mot_passe()"></td>
+				</tr>
+				<tr>
+					<td><b>Tapez-le à nouveau:</b></td>
+					<td>
+						<input type="password" size="30" id="mdp2" oninput="verifier_mot_passe()"><br>
+						<label id="erreur_mdps" style="color:red"></label>
+					</td>
+				</tr>
+				<tr>
+					<td align="center" colspan="2">
+						<input type="button" value="Réinitialisez" id="btn_reset">
+						<input type="button" value="Validez" id="btn_submit" disabled>
+					</td>
+				</tr>
+			</table>
+		</form>
+		<br>
+	</div>
+	<br>
+</body>
+
+</html>

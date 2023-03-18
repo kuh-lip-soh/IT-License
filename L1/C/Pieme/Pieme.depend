@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1579602403 source:c:\users\kalipso\google drive\prog\c\pieme\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

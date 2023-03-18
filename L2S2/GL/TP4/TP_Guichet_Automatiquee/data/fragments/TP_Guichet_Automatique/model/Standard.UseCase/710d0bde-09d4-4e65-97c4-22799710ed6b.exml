@@ -1,0 +1,162 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Retirer de l'argent" version="4">
+  <OBJECT>
+    <ID name="Retirer de l'argent" mc="Standard.UseCase" uid="710d0bde-09d4-4e65-97c4-22799710ed6b"/>
+    <PID name="Package Cas_Utilisation" mc="Standard.Package" uid="066b9216-85ce-41d9-9fe1-2b07fc060a32"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Retirer de l'argent]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Used">
+        <OBJECT>
+          <ID name="UseCaseDependency" mc="Standard.UseCaseDependency" uid="f77aa25f-47eb-48ec-8358-23f97615f140"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[UseCaseDependency]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="S'ientifier" mc="Standard.UseCase" uid="f3ce753f-de63-4fa1-a710-e7560f6e09f2"/>
+            </LINK>
+            <LINK relation="Extension">
+              <FOREIGNID name="include" mc="Infrastructure.Stereotype" uid="00000000-0000-9c49-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="2b708f80-8ca5-4e60-a0df-8db8f8a087c4"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[(1) le client introduit sa carte bancaire
+(2) le système vérifie la validité de la carte
+(3) le système demande au client d’introduire son code
+(4) le client introduit son code confidentiel
+(5) le système vérifie que le code correspond à la carte
+(6) le client choisi l'opération de retrait
+(7) le système demande le montant à retirer
+(8) Le système contrôle le montant demandé par rapport au solde
+(9) Le système débite le compte
+(10) Le système demande de prendre les billets]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="d21dbccc-e48e-4ea2-a6a8-3fa7a46397d4"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[A1 : montant demandé supérieur au solde hebdomadaire
+L’enchaînement A1 démarre au point 8 du scénario nominal.
+A1.1 Le GAB indique au client que le montant demandé est
+supérieur au solde hebdomadaire.
+- Le scénario nominal reprend au point 8.
+A2 : code d’identification provisoirement erroné
+’enchaînement A2 démarre au point 4 du scénario nominal.
+A2. 1. Le GAB indique au client que le code est erroné, pour la
+première ou deuxième fois.
+A2 .2 Le GAB enregistre l’échec sur la carte.
+Le scénario nominal reprend au point 3.]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="constraint" mc="Infrastructure.NoteType" uid="00bc0b8c-0000-251b-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="acb0e616-9c62-4e4f-9d6f-a333db062961"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[(A) Performance : le système doit réagir dans un délai inférieur à 4
+secondes, quelque soit l’action de l ’utilisateur.
+(B) Résistance aux pannes : si une coupure de courant ou une autre
+défaillance survient au cours du cas d’utilisation, la transaction
+sera annulée, l’argent ne sera pas distribué. Le système doit
+pouvoir redémarrer automatiquement dans un état cohérent et
+sans intervention humaine.
+(C) Résistance à la charge : le système doit pouvoir gérer plus de
+1000 retraits d ’argent simultanément]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="non-functional constraint" mc="Infrastructure.NoteType" uid="00bc0c08-0000-242c-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="ca01ef23-4956-472d-aa88-45c3fcdbb1b7"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Si de l ’argent a pu être retiré, la somme d’argent sur le
+compte est égale à la somme d’argent qu’il y avait avant, moins
+le montant du retrait. Sinon la somme d’argent sur le compte
+est la même qu’avant.]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="precondition" mc="Infrastructure.NoteType" uid="00bc0b8c-0000-2515-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="ce957e51-65f3-4d1e-af6e-ca008f6654f5"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Le distributeur contient des billets, il est
+en attente d’une opération, il n’est ni en panne, ni en
+maintenance]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="postcondition" mc="Infrastructure.NoteType" uid="00bc0b8c-0000-2517-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="873a1a9c-8c3d-45b1-8148-3e5bed23b8ad"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[E1 :Carte invalide : au cours de l ’étape (2)
+si la carte est jugée invalide, le système affiche un message
+d’erreur, garde la carte et le CU se termine
+E2 : code d’identification définitivement erroné
+L’enchaînement E2 démarre au point 5 du scénario nominal.
+E2.1 le distributeur indique au client que le code est erroné, pour
+la troisième fois.
+E2.2 Le distributeur confisque la carte.
+E2.3 Le Système d’autorisation est informé ; le cas d’utilisation se
+termine en échec.]]></ATT>
+            <ATT name="MimeType"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="exception" mc="Infrastructure.NoteType" uid="00bc0b8c-0000-2519-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1575968176 source:c:\users\kalipso\google drive\prog\c\3.4\main.c
+	<stdio.h>
+	<stdlib.h>
+

@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1609670580 source:c:\users\kalipso\google drive\prog\c\algo 01\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
+1609670580 source:c:\users\zakaria\google drive\prog\algo\tp1\ex01\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

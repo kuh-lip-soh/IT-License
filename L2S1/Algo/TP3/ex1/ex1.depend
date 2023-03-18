@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1611579517 source:c:\users\zakaria\google drive\prog\algo\tp3\ex1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"rlutil.h"
+
+1571555538 c:\users\zakaria\google drive\prog\algo\tp3\ex1\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+

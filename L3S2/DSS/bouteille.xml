@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bouteilles SYSTEM "bouteille.dtd">
+
+<bouteilles>ceci est une liste
+    <bouteille>
+        <marque>YOUKOUS</marque>
+        <volume unite="cl">150</volume>
+        <composition>
+          <ions type="positif">
+            <ion>calcium 
+                <volume unite="mg/litre" >67,32</volume>
+            </ion>
+            <ion>magnésium 
+                <volume unite="mg/litre" >10,08</volume>
+            </ion>
+          </ions>
+          <ions type="negatif">
+            <ion>chlorure
+                <volume unite="mg/litre" >20,82</volume>
+            </ion>
+            <ion>nitrate 
+                <volume unite="mg/litre" >3,5</volume>
+            </ion>
+          </ions>
+        </composition>
+        <source>
+            <region>HAMAMAT</region>
+            <wilaya> TBESSSA</wilaya> 
+        </source>
+        <ph>7.5</ph>
+        <autres_materiaux>fer</autres_materiaux>
+    </bouteille>
+    
+    <bouteille>
+        <marque>Youkous</marque>
+        <volume unite="cl">150</volume>
+        <composition>
+            <ions type="positif">
+            <ion>calcium 
+                <volume unite="mg/litre" >60,32</volume>
+            </ion>
+            <ion>magnésium 
+                <volume unite="mg/litre" >15,28</volume>
+            </ion>
+          </ions>
+          <ions type="negatif">
+            <ion>chlorure
+                <volume unite="mg/litre" >25,2</volume>
+            </ion>
+            <ion>nitrate 
+                <volume unite="mg/litre" >1,5</volume>
+            </ion>
+          </ions>        
+        </composition>
+        <source>
+            <region>Chrea</region>
+            <wilaya>TBESSSA</wilaya> 
+        </source>
+        <ph>7.5</ph>    
+    </bouteille>
+    
+    <bouteille>
+        <marque>Guedjila</marque>        
+        <composition>
+            <ions type="positif">
+            <ion>calcium 
+                <volume unite="mg/litre" >97</volume>
+            </ion>
+            <ion>magnésium 
+                <volume unite="mg/litre" >47</volume>
+            </ion>
+          </ions>
+          <ions type="negatif">
+            <ion>chlorure
+                <volume unite="mg/litre" >43</volume>
+            </ion>
+            <ion>nitrate 
+                <volume unite="mg/litre" >3,5</volume>
+            </ion>
+          </ions>
+        </composition>
+        <source>
+            <region>Guedjila</region>
+            <wilaya>BISKRA</wilaya> 
+        </source>
+        <ph>7.11</ph>
+    </bouteille>
+    
+    <bouteille>
+        <marque>ifri</marque>
+        <volume unite="cl">150</volume>
+        <composition>
+         <ions type="positif">
+            <ion>calcium 
+                <volume unite="mg/litre" >74</volume>
+            </ion>
+            <ion>magnésium 
+                <volume unite="mg/litre" >20,26</volume>
+            </ion>
+          </ions>
+          <ions type="negatif">
+            <ion>chlorure
+                <volume unite="mg/litre" >36,5</volume>
+            </ion>
+            <ion>nitrate 
+                <volume unite="mg/litre" >1,5</volume>
+            </ion>
+          </ions>
+         </composition>
+        <source>
+            <region>Ouzallaguen</region>
+            <wilaya>BEJAIA</wilaya> 
+        </source>
+        <ph>7.2</ph>
+        <autres_materiaux>particules de silice</autres_materiaux>
+    </bouteille>
+</bouteilles>
+
+

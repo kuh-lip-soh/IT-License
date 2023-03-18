@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="..\..\..\..\Desktop\::{20D04FE0-3AEA-1069-A2D8-08002B30309D}\\Mon Drive\Code\DSS\ifri.xsl"?>
+<bouteille>
+    <marque>ifri</marque>
+    <volume unite="cl">150</volume>
+    <composition>
+        <ions type="positif">
+            <ion>
+                calcium
+                <volume unite="mg/litre">74</volume>
+            </ion>
+            <ion>
+                magnésium
+                <volume unite="mg/litre">20,26</volume>
+            </ion>
+        </ions>
+        <ions type="negatif">
+            <ion>
+                chlorure
+                <volume unite="mg/litre">36,5</volume>
+            </ion>
+            <ion>
+                nitrate
+                <volume unite="mg/litre">1,5</volume>
+            </ion>
+        </ions>
+    </composition>
+    <source>
+        <region>Ouzallaguen</region>
+        <wilaya>BEJAIA</wilaya>
+    </source>
+    <ph>7.2</ph>
+    <autres_materiaux>particules de silice</autres_materiaux>
+</bouteille>

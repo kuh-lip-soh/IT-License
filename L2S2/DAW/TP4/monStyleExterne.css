@@ -1,0 +1,19 @@
+a:hover {
+	background-color : white;
+	color : #B22222;
+	border-color : white;
+	border-style : solid;
+	border-radius : 10px;
+}
+input[type="submit"]:hover {
+	border-color: red;
+	opacity:0.5;
+	transform: rotate(360deg);
+	transition: transform 1s ;
+}
+input[type="password"]:valid {
+	color : green;
+}
+input[type="password"]:invalid {
+	color : red;
+}

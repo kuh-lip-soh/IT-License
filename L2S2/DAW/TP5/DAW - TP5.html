@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>TP 5 - Premiers pas avec le JavaScript</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="monStyleExterne.CSS">
+	</head>
+	
+	<script>
+		//Variables globales
+		var euro_to_dzd = 160; usd_to_dzd = 132;
+		
+		function tauxConversion(){
+			document.getElementsByName("taux")[0].checked
+		}
+		
+		function convertir(){
+		
+		}
+		
+		function modifierMontant(){
+		
+		}
+	</script>
+	
+	<style>
+		div {
+			border-style : solid;
+			border-color : #B22222;
+			border-radius : 10px;
+		}
+		
+		input, select{
+			height : 20px;
+			width:190px;
+			border-radius : 10px;
+			margin:10px;
+		}
+		select {
+			width:200px;
+			height : 25px;
+		}
+		input[type="radio"], select {
+			cursor : pointer;
+		}
+		td{
+			text-align:center;
+			height:10px;
+		}
+		label {
+			font-weight:bold; text-decoration:underline;
+			font-size:20px;line-height:10px;
+		}
+	</style>
+	<body onkeydown="modifierMontant()">
+		<div>
+			<h2 align="center">Convertisseur de devises</h2>
+			<form id="monFormulaire" style="margin-left:20%">
+				<table width="80%">
+					<tr>
+						<td width="35%">
+							<label>Devise de départ:</label>
+							<br>
+							<select id="depart">
+								<option>DZD</option>
+								<option>EURO</option>
+								<option>USD</option>
+							</select>
+							<br>
+							<input type="text" id="montant" value="10">
+						</td>
+						<td width="10%">
+							<img src="converter.png" width="50px" height="50px">
+						</td>
+						<td width="35%">
+							<label>Devise d'arrivée:</label>
+							<br>
+							<select id="arrivee">
+								<option>DZD</option>
+								<option>EURO</option>
+								<option>USD</option>
+							</select>
+							<br>
+							<input type="text" id="resultat" value="10" disabled>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<hr width="80%">
+							<b>Taux de la Banque</b> <input type="radio" name="taux" checked>
+							<b>Taux du Square</b> <input type="radio" name="taux">
+						</td>
+					</tr>
+				</table>
+			</form>
+			<br>
+		</div>
+		<br>
+	</body>
+</html>

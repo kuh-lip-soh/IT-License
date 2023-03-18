@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Test TP</title>
+	<meta charset="UTF-8">
+</head>
+<script>
+    var prixarticle=0;
+    var tva=0;
+    var livraison=700;
+
+function calculer() {
+var article = document.getElementById("article");
+
+if (article == "souris"){
+    prixarticle=1000;
+} else if (article="clavier"){
+    prixarticle=2000;
+} else {
+    prixarticle=500;
+}
+var quantite=document.getElementById("quantite").value;
+document.getElementById("prixbrut").value = prixarticle*quantite;
+
+if(document.getElementsByName("tva")[0].checked){
+    tva=19;
+} else {
+    tva=21;
+}
+document.getElementById("prixtva").value = prixarticle*quantite*tva/100;
+
+if(document.getElementById("wilaya").value==13){
+    livraison=200;
+} else if (document.getElementById("wilaya").value==31){
+    livraison = 500;
+} else {
+    livraison = 700;
+}
+document.getElementById("prixlivraison").value = livraison;
+
+document.getElementById("prixtotal").value =(prixarticle*quantite)+(prixarticle*quantite*tva/100)+livraison;
+}
+
+</script>
+
+<body>
+    <header>
+        <input type="button" value="Calculez votre devis" id="btn_calcul" onclick="calculer()">
+    </header>
+</body>

@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TP0" version="4">
+  <OBJECT>
+    <ID name="TP0" mc="Standard.Project" uid="c799f9a7-087d-4774-9111-33aa97e34550"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[TP0]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Model">
+        <COMPID name="tp0" mc="Standard.Package" uid="f4c8832a-8e96-43d7-8d0f-f167dd5828d2"/>
+        <COMPID name="Modèle" mc="Standard.Package" uid="8740c4d4-451e-44a5-87a3-e6000c2ba3e9"/>
+      </COMP>
+      <COMP relation="DiagramRoot">
+        <COMPID name="TP0" mc="Infrastructure.DiagramSet" uid="27b701f7-ebb7-4fca-8fd1-27483d38cc9c"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

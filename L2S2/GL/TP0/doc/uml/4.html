@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <title>Document</title>
+  <meta content="Document Publisher, www.modeliosoft.com/" name="generator"/>
+	<link href="docp-print.css" media="print" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript">
+     function hideLoading() {
+          document.getElementById('divLoading').style.display = "none";
+          document.getElementById('divFrameHolder').style.display = "block";
+     }
+   
+     function getPageName(url) {
+          var index = url.lastIndexOf("/") + 1;
+          var filenameWithExtension = url.substr(index);
+          var filename = filenameWithExtension.split(".")[0];
+          return filename;
+     }
+  
+     function updateSidebarFrameSrc() {
+          var currentpagename = getPageName(window.location.pathname);
+          document.getElementById("sidebar_frame").src="index.html?page=" + currentpagename;
+     }  
+  
+     if (window.addEventListener)
+          window.addEventListener("load", updateSidebarFrameSrc, false);
+     else if (window.attachEvent)
+          window.attachEvent("onload", updateSidebarFrameSrc);
+     else 
+          window.onload = updateSidebarFrameSrc;
+  </script> 
+  <link href="default.css" media="screen" rel="stylesheet" type="text/css"/></head>
+  <body>
+    <div id="container">        
+      <div id="content">          
+        <div id="header">            
+          <div id="logo"><img src="img/logo.png"/></div>
+          <h1 class="documentTitle">Document</h1>
+          <h2 class="documentType">Subject</h2>            
+        </div>
+				<div id="gTable">
+					<div id="tSidebar"><div id="divLoading"><img alt="" src="img/ajax-loader.gif"/></div><div id="divFrameHolder"><iframe frameborder="0" id="sidebar_frame" src="index.html"><p>Votre navigateur ne supporte pas les iframes.</p></iframe></div><script type="text/javascript">document.getElementById('divLoading').style.display = "block";
+document.getElementById('divFrameHolder').style.display = "none";
+document.getElementById('sidebar_frame').onload = function() {
+hideLoading();
+}</script></div>
+          <div id="tMainArea">
+            <div id="navbar"><ul><li id="prev"><a href="3.html" title="3.html">&lt; Précédent</a></li><li class="disable" id="summary">Modèle</li><li class="disable" id="next">Suivant &gt;</li></ul></div>
+            <div id="page"><div><div align="LEFT" characterStyle="None" class="Titre2" sectionStyle="Titre2" startOnNewPage="true"><a name="toc1.4" target="_top"><!--anchor--></a>Diagramme de classe Class<a name="_45752296-995b-4746-beed-6a12e891d398" target="_top"><!--anchor--></a></div><div align="LEFT" class="Texte" paragraphStyle="Texte" startOnNewPage="false">ClassDiagram</div><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false"/><div align="LEFT" class="Texte" paragraphStyle="Texte" startOnNewPage="false">Diagramme de classe Class</div><a name="#Table 5" target="_top"><!--anchor--></a><div id="tableContainer"><table class="ListeclaireAccent1" horizontal="true" tableStyle="ListeclaireAccent1"><caption>Table 5 - "Diagramme de classe Class" properties</caption><tr class="odd"><th><div align="CENTER" class="Normal" paragraphStyle="Normal" startOnNewPage="false">Name</div></th><th><div align="CENTER" class="Normal" paragraphStyle="Normal" startOnNewPage="false">Value</div></th></tr><tr class="even"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">Name</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">Diagramme de classe Class</div></td></tr><tr class="odd"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">Origin</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false"/><a href="4.html#_45752296-995b-4746-beed-6a12e891d398" target="_top"/></td></tr><tr class="even"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">PreviewData</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">data:image/png;base64,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</div></td></tr><tr class="odd"><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">UiDataVersion</div></td><td><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false">11</div></td></tr></table></div><div>
+</div><a name="#Figure 2" target="_top"><!--anchor--></a><center><img alt="Diagramme de classe Class" height="329.0" paragraphStyle="IMAGE" src="img/45752296-995b-4746-beed-6a12e891d398.png" usemap="#45752296-995b-4746-beed-6a12e891d398" width="335.0"/></center><div align="CENTER" class="Lgende" paragraphStyle="Lgende">Figure 2 Diagramme de classe Class</div><map name="45752296-995b-4746-beed-6a12e891d398"><area ALT="Class" coords="0,0,100,80" href="1.html#_95cc2952-af2d-4efc-8bcb-61a937349cdb" name="45752296-995b-4746-beed-6a12e891d398" shape="rect"/><area ALT="Class1" coords="235,144,335,224" href="2.html#_e18f7ba7-0705-46c2-a7c1-e2555b339b88" name="45752296-995b-4746-beed-6a12e891d398" shape="rect"/><area ALT="Class2" coords="42,249,142,329" href="3.html#_8e4aa659-ff7a-4a9e-a9ee-892e7541a78d" name="45752296-995b-4746-beed-6a12e891d398" shape="rect"/></map><div align="LEFT" class="Normal" paragraphStyle="Normal" startOnNewPage="false"/></div></div>
+            <br/>
+            <div class="spacer" id="navbar"><ul><li id="prev"><a href="3.html" title="3.html">&lt; Précédent</a></li><li class="disable" id="summary">Modèle</li><li class="disable" id="next">Suivant &gt;</li></ul></div>  
+            <div id="footer"><p>Document généré automatiquement par Modelio Document Publisher.<br/><a href="http://www.modeliosoft.com">www.modeliosoft.com</a></p></div>
+          </div>            
+        </div>           
+      </div>
+    </div>
+  </body>
+</html>

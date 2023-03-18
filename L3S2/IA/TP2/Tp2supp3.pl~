@@ -1,0 +1,6 @@
+pgcd(X,X,X).
+pgcd(X,Y,D) :- X < Y, Z is Y-X, pgcd(X,Z,D).
+pgcd(X,Y,D) :- Y < X, pgcd(Y,X,D).
+ppcm(X,Y,D) :- Y < X, Z is X*Y, m is Z/pgcd(X,Y,D) ,ppcm(
+Z,m,D).
+

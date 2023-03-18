@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Salari\u00E9
+comment1.params=n\ ne\ s
+comment1.target=Salari\u00E9(java.lang.String,\ int,\ int)
+comment2.params=
+comment2.target=int\ primeAF()
+comment3.params=
+comment3.target=java.lang.String\ toString()
+numComments=4

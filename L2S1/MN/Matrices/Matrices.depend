@@ -1,0 +1,58 @@
+# depslib dependency file v1.0
+1610013398 source:c:\users\kalipso\google drive\prog\c\matrices\main.c
+	<stdio.h>
+	<stdlib.h>
+	"rlutil.h"
+
+1609946280 source:c:\users\zakaria\google drive\prog\c\matrices\main.c
+	<stdio.h>
+	<stdlib.h>
+	"rlutil.h"
+
+1571555538 c:\users\zakaria\google drive\prog\c\matrices\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1571555538 c:\users\kalipso\google drive\prog\c\matrices\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1610013398 source:c:\users\zakaria\google drive\prog\mn\matrices\main.c
+	<stdio.h>
+	<stdlib.h>
+	"rlutil.h"
+
+1571555538 c:\users\zakaria\google drive\prog\mn\matrices\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
