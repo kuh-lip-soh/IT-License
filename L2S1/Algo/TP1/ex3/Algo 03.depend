@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1609965910 source:c:\users\zakaria\google drive\prog\c\algo 03\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
